@@ -1,0 +1,26 @@
+{
+  "name": "@job-automation/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared domain logic: scrapers, ingest, discovery, categorization, Supabase types + admin client. Consumed by the web app (Vercel) and the workers (Railway).",
+  "exports": {
+    "./scrapers": "./src/scrapers/index.ts",
+    "./scrapers/ingest": "./src/scrapers/ingest.ts",
+    "./scrapers/types": "./src/scrapers/types.ts",
+    "./discovery/validate": "./src/discovery/validate.ts",
+    "./discovery/harvest": "./src/discovery/harvest.ts",
+    "./categorize": "./src/categorize.ts",
+    "./enrich": "./src/enrich.ts",
+    "./supabase/admin": "./src/supabase/admin.ts",
+    "./database.types": "./src/supabase/database.types.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.0",
+    "turndown": "^7.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/turndown": "^5.0.6"
+  }
+}
