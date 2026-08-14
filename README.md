@@ -1,5 +1,7 @@
 # Employable — Supermemory Hackathon
 
+production: https://tryemployable.ai
+
 An AI job-application assistant. It maps your profile onto real ATS application
 forms, drafts your answers and cover letters with Claude, and lets you review
 before anything is submitted.
